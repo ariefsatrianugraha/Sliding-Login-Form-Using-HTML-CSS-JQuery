@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+    
+    <div class="show-login-btn"><i class="fas fa-sign-in-alt"></i> Show Login Form</div>
+
+    <div class="login-box">
+
+        <div class="hide-login-btn"><i class="fas fa-times"></i></div>
+        <form action="index.html" class="login-form" method="post">
+            <h1>Selamat Datang</h1>
+            <input type="text" class="txtinput" placeholder="Username">
+            <input type="password" class="txtinput" placeholder="Password">
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+
+    </div>
+
+    <script>
+        $(".show-login-btn").on('click',function(){
+            $(".login-box").toggleClass('showed');
+        });
+        $(".hide-login-btn").on('click',function(){
+            $(".login-box").toggleClass('showed');
+        })
+    </script>
+</body>
+</html>
